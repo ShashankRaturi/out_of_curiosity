@@ -1,18 +1,23 @@
+/*
+basic program for understanding difference between reference vs pointer
+*/
+
+
 #include<iostream>
 using namespace std;
 
 void inc(int a){
-    cout <<"Inside function 0 : " << &a << endl;
+    cout <<"Inside inc : " << &a << endl;
     ++a;
 }
 
 void inc1(int *a){
-    cout <<"Inside function 1 : " << &a << endl;
+    cout <<"Inside inc1 : " << &a << endl;
     *a += 1;
 }
 
 void inc2(int &a){
-    cout <<"Inside function 2 : " << &a << endl;
+    cout <<"Inside inc2 : " << &a << endl;
     ++a;
 }
 
